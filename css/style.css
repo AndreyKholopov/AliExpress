@@ -1,0 +1,108 @@
+body {
+  background: linear-gradient(to right, #595959, #999);
+  font-family: Open Sans, Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .logo {
+  height: 120px;
+  width: 120px;
+  margin-left: 15px;
+  margin-right: 45px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("../images/logo.png");
+}
+.header .search {
+  border: 3px solid #FF4747;
+  flex-grow: 1;
+  display: flex;
+}
+.header .search #search-goods {
+  width: 100%;
+  height: 25px;
+}
+.header .search #search-btn {
+  height: 31px;
+  width: 31px;
+  border: 3px solid #FF4747;
+  background: #FF4747;
+  background-image: url("../images/icons.png");
+  background-position: -8px -1328px;
+}
+.header .navbar-elements {
+  width: 32px;
+  height: 32px;
+  margin: 0 15px;
+  display: flex;
+}
+.header .navbar-elements#cart {
+  background-image: url("../images/icons.png");
+  background-position: 0 -2895px;
+}
+.header .navbar-elements#cart:hover {
+  background-position: 0 -2947px;
+}
+.header .navbar-elements#wishlist {
+  background-image: url("../images/icons.png");
+  background-position: 1px -3592px;
+}
+.header .navbar-elements#wishlist:hover {
+  background-position: 1px -3642px;
+}
+.header .navbar-elements .counter {
+  position: relative;
+  top: -2px;
+  right: -20px;
+  height: 16px;
+  padding: 0 8px;
+  border-radius: 50%;
+  font-size: 12px;
+  line-height: 16px;
+  font-family: GTEestiProDisplay, Arial, sans-serif;
+  font-weight: 700;
+  color: #fff;
+  background-color: #FF4747;
+}
+
+@media screen and (max-width: 768px) {
+  .header .logo {
+    height: 78px;
+    width: 78px;
+    margin-right: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .header {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .header .logo {
+    height: 120px;
+    width: 120px;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  .header .search {
+    margin-bottom: 15px;
+    width: 100vw;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

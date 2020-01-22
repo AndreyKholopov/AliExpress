@@ -1,3 +1,13 @@
+$main-color: #999
+$search-color: #FF4747
+$hover-color: #ff9a00
+
+@function set-text-color($color)
+	@if (lightness($color) > 70)
+		@return #000
+	@else 
+		@return #fff
+	
 //Media Query Mixins
 @mixin mediaSm
 	@media screen and (max-width: 500px)

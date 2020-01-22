@@ -1,1 +1,83 @@
 @import 'config'
+
+body
+   background: linear-gradient(to right, darken($main-color, 25), $main-color)
+   font-family: Open Sans, Arial, Helvetica, sans-serif
+
+a
+   text-decoration: none
+   color: set-text-color($main-color)
+
+.container
+   max-width: 1280px
+   margin: 0 auto
+   padding: 0 15px
+
+.header
+   margin: 10px 0
+   display: flex
+   justify-content: space-between
+   align-items: center
+
+   .logo 
+      height: 120px
+      width: 120px
+      margin-left: 15px
+      margin-right: 45px
+      background-size: contain
+      background-repeat: no-repeat 
+      background-image: url("../images/logo.png")
+
+   .search
+      border: 3px solid $search-color
+      flex-grow: 1
+      display: flex
+
+      #search-goods
+         width: 100%
+         height: 25px
+
+      #search-btn
+         height: 31px
+         width: 31px
+         border: 3px solid $search-color
+         background: $search-color
+         background-image: url('../images/icons.png')
+         background-position: -8px -1328px
+
+   .navbar-elements
+      width: 32px
+      height: 32px
+      margin: 0 15px
+      display: flex
+
+      &#cart
+         background-image: url('../images/icons.png')
+         background-position: 0 -2895px
+
+         &:hover 
+            background-position: 0 -2947px
+
+      &#wishlist
+         background-image: url('../images/icons.png')
+         background-position: 1px -3592px
+
+         &:hover 
+            background-position: 1px -3642px
+
+      .counter
+         position: relative
+         top: -2px
+         right: -20px
+         height: 16px
+         padding: 0 8px
+         border-radius: 50%
+         font-size: 12px
+         line-height: 16px
+         font-family: GTEestiProDisplay, Arial, sans-serif
+         font-weight: 700
+         color: set-text-color($search-color)
+         background-color: $search-color
+
+   
+@import 'mobile'
