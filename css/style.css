@@ -1,11 +1,15 @@
 body {
-  background: linear-gradient(to right, #595959, #999);
+  background: linear-gradient(to right, #f2f2f2, #b2b2b2);
   font-family: Open Sans, Arial, Helvetica, sans-serif;
 }
 
 a {
   text-decoration: none;
-  color: #fff;
+  color: #000;
+}
+
+h1, h2 {
+  color: #000;
 }
 
 .container {
@@ -79,6 +83,67 @@ a {
   font-weight: 700;
   color: #fff;
   background-color: #FF4747;
+}
+
+main .category {
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  margin-top: 30px;
+}
+main .category .category-title {
+  font-size: 24px;
+  line-height: 27px;
+  margin-bottom: 10px;
+}
+main .category .category-list {
+  padding-left: 32px;
+  color: black;
+  font-size: 15px;
+}
+main .category .category-list li a:hover {
+  color: #FF4747;
+}
+main .category .category-list li a:before {
+  display: block;
+  position: relative;
+  content: "";
+  width: 24px;
+  height: 24px;
+  right: 28px;
+  top: 18px;
+  background-image: url(../images/icons.png);
+  background-repeat: no-repeat;
+}
+main .category .category-list li a#pc:before {
+  background-position: 0 -675px;
+}
+main .category .category-list li a#mobile:before {
+  background-position: 0 -2999px;
+}
+main .category .category-list li a#home:before {
+  background-position: 0 -1571px;
+}
+main .category .category-list li a#sport:before {
+  background-position: 0 -3504px;
+}
+main .category .category-list li a#electron:before {
+  background-position: 0 -763px;
+}
+main .category .category-list li a#pc:hover:before {
+  background-position: 0 -719px;
+}
+main .category .category-list li a#mobile:hover:before {
+  background-position: 0 -3043px;
+}
+main .category .category-list li a#home:hover:before {
+  background-position: 0 -1615px;
+}
+main .category .category-list li a#sport:hover:before {
+  background-position: 0 -3548px;
+}
+main .category .category-list li a#electron:hover:before {
+  background-position: 0 -807px;
 }
 
 @media screen and (max-width: 768px) {

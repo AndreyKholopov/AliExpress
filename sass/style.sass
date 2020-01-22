@@ -1,11 +1,14 @@
 @import 'config'
 
 body
-   background: linear-gradient(to right, darken($main-color, 25), $main-color)
+   background: linear-gradient(to right, $main-color, darken($main-color, 25))
    font-family: Open Sans, Arial, Helvetica, sans-serif
 
 a
    text-decoration: none
+   color: set-text-color($main-color)
+
+h1,h2
    color: set-text-color($main-color)
 
 .container
@@ -76,8 +79,70 @@ a
          line-height: 16px
          font-family: GTEestiProDisplay, Arial, sans-serif
          font-weight: 700
-         color: set-text-color($search-color)
+         color: #fff
          background-color: $search-color
 
+main
+   .category
+      display: flex
+      flex-direction: column
+      font-weight: 700
+      margin-top: 30px
+
+      .category-title
+         font-size: 24px
+         line-height: 27px
+         margin-bottom: 10px
+
+      .category-list
+         padding-left: 32px
+         color: black
+         font-size: 15px
+
+         li
+            a
+               &:hover 
+                  color: $search-color
+
+               &:before 
+                  display: block
+                  position: relative
+                  content: ''
+                  width: 24px
+                  height: 24px
+                  right: 28px
+                  top: 18px
+                  background-image: url(../images/icons.png)
+                  background-repeat: no-repeat
+
+               &#pc:before 
+                  background-position: 0 -675px
+
+               &#mobile:before 
+                  background-position: 0 -2999px
+
+               &#home:before
+                  background-position: 0 -1571px
+
+               &#sport:before 
+                  background-position: 0 -3504px
+
+               &#electron:before 
+                  background-position: 0 -763px
+
+               &#pc:hover:before 
+                  background-position: 0 -719px
+
+               &#mobile:hover:before 
+                  background-position: 0 -3043px
+
+               &#home:hover:before 
+                  background-position: 0 -1615px   
+
+               &#sport:hover:before 
+                  background-position: 0 -3548px   
+
+               &#electron:hover:before 
+                  background-position: 0 -807px
    
 @import 'mobile'
