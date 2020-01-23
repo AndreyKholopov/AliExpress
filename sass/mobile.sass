@@ -1,15 +1,35 @@
 @include mediaXL
 
 @include mediaLg
+   main
+      .goods-wrapper
+         grid-template-columns: repeat(3, 1fr)
 
 @include mediaMd
+   main
+      .goods-wrapper
+         grid-template-columns: repeat(2, 1fr)
+
+@include mediaSm
    .header
       .logo
          height: 78px
          width: 78px
          margin-right: 20px
 
-@include mediaSm
+   main
+      .main-inner
+         flex-direction: column
+         align-items: center
+
+         .category
+            margin-bottom: 30px
+            margin-top: 0px
+      
+      .goods-wrapper
+         width: 100%
+
+@include mediaSX
    .header
       flex-wrap: wrap
       justify-content: center
@@ -23,3 +43,7 @@
       .search
          margin-bottom: 15px
          width: 100vw
+
+   main
+      .goods-wrapper
+         grid-template-columns: repeat(1, 1fr)

@@ -7,14 +7,30 @@ $hover-color: #ff9a00
 		@return #000
 	@else 
 		@return #fff
+
+@keyframes spinner-loading 
+	0% 
+		transform: rotate(0deg)
+	100% 
+		transform: rotate(360deg)
+
+@keyframes show 
+	0% 
+		opacity: 0
+	to
+		opacity: 1
 	
 //Media Query Mixins
-@mixin mediaSm
+@mixin mediaSX
 	@media screen and (max-width: 500px)
 		@content
 
-@mixin mediaMd
+@mixin mediaSm
 	@media screen and (max-width: 768px)
+		@content
+
+@mixin mediaMd
+	@media screen and (max-width: 965px)
 		@content
 
 @mixin mediaLg
