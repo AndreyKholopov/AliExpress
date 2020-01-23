@@ -54,7 +54,7 @@ h1, h2 {
   flex-grow: 1;
   display: flex;
 }
-.header .search #search-goods {
+.header .search #searchGoods {
   width: 100%;
   height: 25px;
 }

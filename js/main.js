@@ -181,6 +181,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const searchGoods = event => {
         event.preventDefault()
         const input = event.target.elements.searchGoods
+        console.log('input: ', input);        
         const inputValue = input.value.trim()
         if (inputValue !== '') {
             const searchString = new RegExp(inputValue, 'i')
